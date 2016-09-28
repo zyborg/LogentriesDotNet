@@ -1,5 +1,13 @@
 {
-  "version": "1.0.0-*",
+  "title": "Logentries Core Library (.NET Core)",
+  "version": "0.5.0-*",
+  "description": "Core library for .NET client support for Logentries.",
+  "authors": [
+    "https://github.com/zyborg"
+  ],
+  "copyright": "Copyright © Logentries",
+  "projectUrl": "https://github.com/zyborg/LogentriesDotNet",
+
   "buildOptions": {
     "debugType": "portable"
   },
@@ -17,5 +25,19 @@
         "NETStandard.Library": "1.6.0"
       }
     }
+  },
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zyborg/LogentriesDotNet"
+    },
+    "licenseUrl": "https://github.com/zyborg/LogentriesDotNet/blob/master/LICENSE",
+    "owners": [
+      "ebekker"
+    ],
+    "summary": "Core library for .NET client support for Logentries.",
+    "tags": ["logging","Logentries","log"],
+    "releaseNotes": "https://github.com/zyborg/LogentriesDotNet/releases"
   }
 }

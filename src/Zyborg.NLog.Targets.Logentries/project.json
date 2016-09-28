@@ -1,5 +1,13 @@
 {
-  "version": "1.0.0-*",
+  "title": "Logentries Plugin for NLog (.NET Core)",
+  "version": "0.5.0-*",
+  "description": "NLog target extension for Logentries.",
+  "authors": [
+    "https://github.com/zyborg"
+  ],
+  "copyright": "Copyright © Logentries",
+  "projectUrl": "https://github.com/zyborg/LogentriesDotNet",
+
   "buildOptions": {
     "debugType": "portable"
   },
@@ -15,5 +23,19 @@
         "NETStandard.Library": "1.6.0"
       }
     }
+  },
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zyborg/LogentriesDotNet"
+    },
+    "licenseUrl": "https://github.com/zyborg/LogentriesDotNet/blob/master/LICENSE",
+    "owners": [
+      "ebekker"
+    ],
+    "summary": "NLog target for Logentries",
+    "tags": ["logging","Logentries","log", "nlog"],
+    "releaseNotes": "https://github.com/zyborg/LogentriesDotNet/releases"
   }
 }
