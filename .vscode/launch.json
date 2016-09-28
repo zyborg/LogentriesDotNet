@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}\\test\\Zyborg.NLog.Targets.Logentries-clitest\\bin\\Debug\\netcoreapp1.0\\Zyborg.NLog.Targets.Logentries-clitest.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "externalConsole": false,
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "copyToOutput": [
+      "nlog.config"
+    ]
+  },
+  "dependencies": {
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "NLog": "4.4.0-betav15",
+    "Zyborg.Logentries": {
+      "target": "project"
+    },
+    "Zyborg.NLog.Targets.Logentries": {
+      "target": "project"
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  }
+}
