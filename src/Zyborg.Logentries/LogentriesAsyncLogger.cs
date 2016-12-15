@@ -525,7 +525,7 @@ namespace Zyborg.Logentries
             string[] messages = { message, ex.ToString() };
             foreach (var msg in messages)
             {
-                Trace.WriteLine(message);
+                Trace.WriteLine(msg);
             }
         }
 
