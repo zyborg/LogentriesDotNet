@@ -102,9 +102,16 @@ namespace Zyborg.Logentries
             // so data should be sent immediately. And indeed it does appear to be sent promptly when it works.
             m_Client.Client.SetSocketOption( SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
 
-            // set timeouts to 10 seconds idle before keepalive, 1 second between repeats, 
-            SetSocketKeepAliveValues(m_Client, 10 *1000, 1000);
-            
+            // set timeouts to 10 seconds idle before keepalive, 1 second between repeats,
+            try
+            {
+                SetSocketKeepAliveValues(m_Client, 10 * 1000, 1000);
+            }
+            catch (PlatformNotSupportedException)
+            {
+                // .net core on linux does not support chaning of that settings at the moment. defaults applied.
+            }
+
             m_Stream = m_Client.GetStream();
 
             if (m_UseSsl)
