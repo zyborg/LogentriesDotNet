@@ -109,7 +109,7 @@ namespace Zyborg.Logentries
             }
             catch (PlatformNotSupportedException)
             {
-                // .net core on linux does not support chaning of that settings at the moment. defaults applied.
+                // .net core on linux does not support modification of that settings at the moment. defaults applied.
             }
 
             m_Stream = m_Client.GetStream();
