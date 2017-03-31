@@ -105,7 +105,10 @@ namespace Zyborg.Logentries
             // set timeouts to 10 seconds idle before keepalive, 1 second between repeats,
             try
             {
-                SetSocketKeepAliveValues(m_Client, 10 * 1000, 1000);
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    SetSocketKeepAliveValues(m_Client, 10 * 1000, 1000);
+                }
             }
             catch (PlatformNotSupportedException)
             {
