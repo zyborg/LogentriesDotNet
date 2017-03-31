@@ -127,6 +127,7 @@ namespace Zyborg.Logentries
             _queue = new BlockingCollection<string>(QUEUE_SIZE);
             _allQueues.Add(_queue);
 
+            _config = config;
             if (_config == null)
                 _config = BuildDefaultConfiguration();
 
