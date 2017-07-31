@@ -1,6 +1,6 @@
 {
   "title": "Logentries Plugin for NLog (.NET Core)",
-  "version": "0.5.0-*",
+  "version": "0.6.0-*",
   "description": "NLog target extension for Logentries.",
   "authors": [
     "https://github.com/zyborg"

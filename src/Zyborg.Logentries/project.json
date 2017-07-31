@@ -1,6 +1,6 @@
 {
   "title": "Logentries Core Library (.NET Core)",
-  "version": "0.5.0-*",
+  "version": "0.6.0-*",
   "description": "Core library for .NET client support for Logentries.",
   "authors": [
     "https://github.com/zyborg"
